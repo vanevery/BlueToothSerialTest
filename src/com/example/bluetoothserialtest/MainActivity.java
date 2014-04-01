@@ -43,7 +43,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	protected void onResume() {
 		super.onResume();
 		
-		btserial.connect("00:06:66:42:1F:DF");
+		btserial.connect(BLUETOOTH_MAC_ADDRESS);
 		Log.v(LOGTAG,"Connected");
 		
 	}
